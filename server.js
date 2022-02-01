@@ -1,6 +1,5 @@
 const express = require("express");
 const mysql = require("mysql2");
-const fs = require("fs");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -14,7 +13,7 @@ const db = mysql.createConnection (
         host: "localhost",
         user: "root",
         password: "password",
-        database: "move_db"
+        database: "movie_db"
     },
     console.log("confirm")
 );
