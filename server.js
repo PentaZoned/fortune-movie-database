@@ -18,6 +18,12 @@ const db = mysql.createConnection (
     console.log("confirm")
 );
 
+app.get('/api/movies', (req, res) => {
+    db.query("SELECT * FROM movies", (err, data) => {
+        res.json(data);
+    })
+});
+
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
 });
