@@ -14,7 +14,7 @@ const db = mysql.createConnection (
         host: "localhost",
         user: "root",
         password: "password",
-        database: "move_db"
+        database: "movie_db"
     },
     console.log("confirm")
 );
